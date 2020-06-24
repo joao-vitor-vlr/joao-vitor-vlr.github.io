@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_login.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="bg-image">
+        <div class="bg-text">
+            <h1>Cadastre-se para receber novidades no email</h1>
+        <form id="form_login" method="post" onsubmit="return entrar()">
+          <form >
+            <ul class="cad" id="Cad_erro"></ul>
+          </form>
+          <label for="nome"></label>
+          Nome: <input type="text" id="nome" name="nome">
+            <br>
+            <label for="email"></label>
+            Email <input type="text" id="email" name="email">
+            <br>
+            <label for="senha"></label>
+            Senha: <input type="password" id="senha" name="senha">
+            <br>
+          <input type="submit" onclick="cadastro()"></input>
+        </form>
+        
+        
+      
+      </div>
+        
+    </div>
+
+
+</body>
+</html>
+<script>
+  function cadastro() {
+
+    var erros = validacadastro();
+    Cad_erro.innerHTML = '';
+
+    if (erros.length > 0) {
+      for (var i = 0; i < erros.length; i++) {
+        var erro = erros[i];
+        var li = document.createElement("li");
+        li.innerHTML = erro;
+        Cad_erro.appendChild(li);
+      }
+    } else {
+     Cad_erro.innerHTML = `<h1>Cadastrado com sucesso</h1>`
+    }
+  }
+
+  function validacadastro() {
+    var erros = [];
+
+    if (!nome.value) {
+      erros.push("Preencher nome!");
+    }
+
+    if (!email.value||
+      (email.value.search("@") == -1) ||
+      (email.value.search(".") == -1) ||
+      (email.value.search(" ") >= '')) {
+      erros.push("O formato do email é: User@email.com");
+    }
+
+    if (!senha.value || senha.value.length <= 10 || senha.value.search(" ") >= '') {
+      erros.push("Senha precisa ser maior do que 10 digitos");
+    }
+    return erros;
+  }
+
+</script>

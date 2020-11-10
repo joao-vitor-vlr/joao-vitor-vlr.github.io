@@ -15,21 +15,51 @@ html, body {
     margin: 0px;
   }
 
-  .header {
-    background-color: #e0d9d900;
-    padding: 0px;
-    text-align: left;
-     margin: 20px;
-  }
+  
  
 
   .parallax {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(250, 249, 249);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     font-size: xx-large;
+    min-height: 80%;
+    box-shadow: 2px; 
   }
+
+  .paimon{
+    width: 20%;
+    float: right;
+    margin-top: 20px;
+  }
+
+.fundo{
+    min-height: 95%;
+    margin: 5%;
+    background-image: url(genshin-logo.jpg);
+    background-color: blue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+  }
+ .separacao{
+    background-color: rgb(224, 109, 109);
+    min-height: 100%;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(44, 44, 44, 0.74);
+    color: white;
+    text-align: center;
+    padding: 10px;
+   
+ }
+
+
   
 

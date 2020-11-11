@@ -14,12 +14,34 @@ html, body {
     padding: 0;
     margin: 0px;
   }
+  
+.topnav {
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0);
+  
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 135px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
   
- 
+.titulo{
+  text-align: center;
+}
 
   .parallax {
-    background-color: rgb(250, 249, 249);
+    background-color: rgba(187, 69, 69, 0.192);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

@@ -29,18 +29,14 @@ html, body {
     box-shadow: 2px; 
   }
 
-  .paimon{
-    width: 20%;
-    float: right;
-    margin-top: 20px;
-  }
+
 
 .fundo{
     min-height: 95%;
-    margin: 5%;
-    background-image: url(genshin-logo.jpg);
-    background-color: blue;
+    margin: 0%;
+    background-image: url(1107686.png);
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;  
   }
@@ -51,9 +47,9 @@ html, body {
   .footer {
     position: fixed;
     left: 0;
-    bottom: 0;
+    top: 0;
     width: 100%;
-    background-color: rgba(44, 44, 44, 0.74);
+    background-color: rgba(51, 51, 51, 0.74);
     color: white;
     text-align: center;
     padding: 10px;

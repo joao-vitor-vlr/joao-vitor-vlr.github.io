@@ -1,4 +1,11 @@
+@font-face {
+  font-family: Fonte;
+  src: url(MilkyNice.ttf);
+}
 
+div {
+  font-family: myFirstFont;
+}
 body{
   background-image: url();
   background-repeat: no-repeat;
@@ -18,6 +25,7 @@ html, body {
 .topnav {
   overflow: hidden;
   background-color: rgba(51, 51, 51, 0);
+  background-attachment: fixed;
   
 }
 
@@ -37,47 +45,51 @@ html, body {
 
   
 .titulo{
+  font-family: Fonte;
+  font-size: 40px;
   text-align: center;
+  color: rgb(180, 45, 192);
+  margin: 15% 10% 20% 10%;
+  padding: 2%;
 }
 
-  .parallax {
-    background-color: rgba(187, 69, 69, 0.192);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: xx-large;
-    min-height: 80%;
-    box-shadow: 2px; 
-  }
+
 
 
 
 .fundo{
     min-height: 95%;
     margin: 0%;
-    background-image: url(1107686.png);
+    background-image: url(cosplay.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;  
   }
- .separacao{
-    background-color: rgb(224, 109, 109);
-    min-height: 100%;
+  .fundoAnime{
+    background-image: url(chika.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: xx-large;
+    min-height: 95%;
   }
-  .footer {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background-color: rgba(51, 51, 51, 0.74);
-    color: white;
-    text-align: center;
-    padding: 10px;
-   
- }
+ .separacao{
+    background-color: rgba(255, 255, 255, 0);
+    min-height: 100%;
 
+  }
+ 
+.paragrafoInicial{
+  font-family: Fonte;
+ 
+  font-size: 25px;
+  box-shadow: 2px 2px 2px;
+  padding: 5%;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+}
 
   
 

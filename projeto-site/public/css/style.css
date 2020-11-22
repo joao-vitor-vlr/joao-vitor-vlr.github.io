@@ -1,8 +1,11 @@
 @font-face {
   font-family: Fonte;
-  src: url(MilkyNice.ttf);
+  src: url(../MilkyNice.ttf);
 }
 
+h1{
+  margin: 0% 0% 2% 0%;
+}
 
 body{
   font-family: Fonte;
@@ -32,7 +35,7 @@ html, body {
   float: left;
   color: #ffffff;
   text-align: center;
-  padding: 20px 129px;
+  padding: 1% 9.9%;
   text-decoration: none;
   font-size: 25px;
 }
@@ -52,21 +55,20 @@ html, body {
   padding: 2%;
 }
 
-
-
-
-
+/* Primeiro fundo com foto */
 .fundo{
     min-height: 95%;
     margin: 0%;
-    background-image: url(cosplay.jpg);
+    background-image: url(../fotos/cosplay.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;  
   }
+
+/* segundo fundo com foto */
   .fundoAnime{
-    background-image: url(chika.png);
+    background-image: url(../fotos/chika.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,21 +76,27 @@ html, body {
     font-size: xx-large;
     min-height: 95%;
   }
- .separacao{
-    background-color: rgba(255, 255, 255, 0);
+/* Separação/ colocar textos */
+ .separacaoInicial{
+    background-color: white;
     min-height: 100%;
-
+    padding: 3%;
+    
   }
- 
-.paragrafoInicial{
-  
-  text-align: center;
-  font-size: 25px;
 
-  padding: 5%;
+
+.paragrafoInicial{
+  text-align: center;
+  font-size: 165%;
+  padding: 2% 5% 2% 5%;
   border-radius: 5px;
-  background-color: rgba(180,45,192,0.4);
+  background-color: rgba(153, 47, 163, 0.644);
 }
 
+.imagem_pensativo{
+  margin:2% 0% 0% 2%;
+  width: 10%;
+  float: left;
+}
   
 

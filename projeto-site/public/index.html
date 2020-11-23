@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
     <title>Document</title>
 </head>
 <body>  
@@ -32,13 +32,26 @@
         
         <h1>Tá mas... O que é cosplay?</h1>
         
-        Cosplay é a arte de se transformar em algum personagem, seja de animes, séries, filmes, historias em quadrinhos e etc.
+        <p>Cosplay é a arte de se transformar em algum personagem, 
+          seja de animes, séries, filmes, historias em quadrinhos e etc.</p>
+          <div class="Cosplay_tanya">
+            <img src="../public/fotos/tanya.jpg" class="cosplay1">
+            <img src="../public/fotos/2.jpg">
+            <img src="../public/fotos/1.jpg">
+          </div>
       </div>
+      
     </div>
+
 
       
     
     <div class="fundoAnime"></div>
+      
+       
+        
+      
+    </div>
     
     <div class="separacao">
       <div>
@@ -50,13 +63,21 @@
     <div class="parallax"></div>
 
 
-    <div class="parallax"></div>
+  
 
 
    
 </body>
 </html>
 <script>
+  
+function mostrarfotos(){
+  var contador = 1
+  while(contador <= 3){
+    fotosCosplayer.innerHTML += `<img src="../public/fotos/${contador}.jpg" >`
+    contador++
+  }
+}
 
   
 </script>

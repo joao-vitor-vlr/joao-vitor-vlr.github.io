@@ -67,15 +67,7 @@ html, body {
   }
 
 /* segundo fundo com foto */
-  .fundoAnime{
-    background-image: url(../fotos/chika.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: xx-large;
-    min-height: 95%;
-  }
+  
 /* Separação/ colocar textos */
  .separacaoInicial{
     background-color: white;
@@ -93,10 +85,36 @@ html, body {
   background-color: rgba(153, 47, 163, 0.644);
 }
 
-.imagem_pensativo{
-  margin:2% 0% 0% 2%;
+
+.Cosplay_tanya{
+  background-color: rgba(255, 255, 255, 0.466);
   width: 10%;
+   
+   
+}
+.Cosplay_tanya .cosplay1{
+  width: 200px;
   float: left;
 }
   
-
+.fundoAnime{
+  background-image: url(../fotos/chika.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: xx-large;
+  min-height: 95%;
+  padding: 10%;
+  text-align: center;
+  display: flex;
+}
+.Cosplayer{
+  width: 400px;
+  background-color: rgba(221, 221, 221, 0.24);
+}
+.Cosplayer2{
+  width: 400px;
+  background-color: rgba(221, 221, 221, 0.24);
+  justify-content: flex-end;
+}

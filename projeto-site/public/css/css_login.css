@@ -16,22 +16,31 @@ body, html {
     min-height: 100%;
   }
   
-  
+  .fundo{
+    min-height: 100%;
+    background-image: url(../fotos/hideri.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  }
   
     
   .topnav {
+    display: flex;
     overflow: hidden;
-    background-color: rgba(245, 245, 245, 0.678);
+    background-color: rgba(255, 240, 240, 0.397);
     background-attachment: fixed;
-    
+    justify-content: space-around;
   }
   
   .topnav a {
-    
+    display: flex;
+    justify-content: space-around;
     float: left;
     color: #000000;
     text-align: center;
-    padding: 2% 13.67%;
+    padding: 1% 14%;
     text-decoration: none;
     font-size: 25px;
   }
@@ -40,19 +49,14 @@ body, html {
     background-color: #ddd;
     color: black;
   }
-  .fundo{
-    min-height: 100%;
-    background-image: url(../fotos/hideri.jpg);
-   
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;  
-  }
+  
 
   .login_container{
-    width: 20%;
+    width: 40%;
+    height: 40%;
+    display: flex;
     background-color: rgba(128, 128, 128, 0.377);
     border: rgb(255, 255, 255);
-    margin: 30%;
+   
   }
   

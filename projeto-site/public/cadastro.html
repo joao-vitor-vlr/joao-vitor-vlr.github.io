@@ -1,0 +1,33 @@
+
+
+
+<body>
+    
+    <div class="container">
+
+        <form class="input-cadastro" id="form_cadastro" method="post" onsubmit="return cadastrar()">
+        
+            <h2 class="input-box-title">Cadastro</h2>
+        
+            <p class="input-box-text">Informe seu nome</p>
+        
+            <input type="text" id="in_nome" name="nome" placeholder="José Eduardo">
+        
+            <p class="input-box-text">Informe seu email</p>
+        
+            <input type="email" id="in_email" name="email" placeholder="email@gmail.com">
+        
+            <p class="input-box-text">Senha</p>
+        
+            <input type="password" id="in_senha" name="senha" placeholder="******">
+        
+            <button class="button" id="btn_cadastro">Cadastrar</button>
+        
+        </form>
+        <img id="img_aguarde" class="gif_box" style="display: none;" src="./img/loadin-dudu-unscreen.gif">
+    </div>
+   
+</body>
+
+</html>
+<script src="login.js"></script>

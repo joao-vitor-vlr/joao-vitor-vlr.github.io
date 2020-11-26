@@ -16,13 +16,17 @@
           
         </div>
   
-        <div class="login_container">
-            <div>
-                <input type="text" id="login"><br>
-                <input type="password" id="senha">
-            </div>
-        </div>
+        <form id="form_login" method="post" onsubmit="return entrar()">
+            Usuário:
+            <input type="text" class="input-Login" name="login">
+            <br>
+            Senha:
+            <input type="password" class="input-senha" name="senha">
+            <br>
+            <button id="btn_entrar" class="btn-green">Entrar</button>
+        </form>
         
       </div>
 </body>
 </html>
+<script src="login.js"></script>

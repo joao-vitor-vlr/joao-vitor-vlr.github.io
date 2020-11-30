@@ -11,7 +11,6 @@
 
 
     <div class="fundo">
-
       <div class="topnav">
         <a href="index.html">Home</a>
         <a href="login.html">Login</a>
@@ -20,41 +19,54 @@
       </div>
 
 
-      <div class="titulo">
+        <div class="titulo">
           Para os amantes de animes e cosplays
-      </div>
+        </div>
     </div>
 
 
     <div class="separacaoInicial">
-      
       <div class="paragrafoInicial">
         
-        <h1>Tá mas... O que é cosplay?</h1>
+        <h1>Tá, mas... O que é cosplay?</h1>
         
-        <p>Cosplay é a arte de se transformar em algum personagem, 
-          seja de animes, séries, filmes, historias em quadrinhos e etc.</p>
-          
+        <p>Cosplay é a arte de se transformar em personagens,
+           de animes, séries, filmes, historias em quadrinhos e etc.</p>
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+         
+              <img src="../fotos/caitlyn.jpg" style="width:75%">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+         
+              <img src="../fotos/akihabara.jpg" style="width:75%">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+            
+              <img src="../fotos/BGS_mario.jpg" style="width:75%">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+           
       </div>
-      
     </div>
 
 
       
     
-    <div class="fundoAnime">
-      <div class="Cosplay_tanya">
-        <img src="../fotos/tanya.jpg" >
-        <img src="../fotos/2.jpg">
-        <img src="../fotos/1.jpg">
-      </div>
-    </div>
+    <div class="fundoAnime"></div>
       
-       
-        
-      
-    
-    
     <div class="separacao"></div>
 
 
@@ -68,13 +80,31 @@
 </body>
 </html>
 <script>
-  
-function mostrarfotos(){
-  var contador = 1
-  while(contador <= 3){
-    fotosCosplayer.innerHTML += `<img src="../public/fotos/${contador}.jpg" >`
-    contador++
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
   }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 }
 
   

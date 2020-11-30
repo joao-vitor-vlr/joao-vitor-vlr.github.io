@@ -1,9 +1,10 @@
 {
-  "name": "pi-ads-2019-2-root",
-  "version": "0.0.0",
+  "name": "site-pessoal",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./projeto-site/bin/www",
-	"postinstall": "cd projeto-site && npm install"
+  "start": "node ./projeto-site/bin/www",
+  "postinstall": "cd projeto-site && npm install"
   }
-}
+  }
+  

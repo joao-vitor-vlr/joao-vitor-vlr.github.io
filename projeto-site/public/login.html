@@ -15,18 +15,23 @@
           <a href="cadastro.html">Cadastro</a>
           
         </div>
-  
-        <form id="form_login" method="post" onsubmit="return entrar()">
-            Usuário:
+
+    <div class="login">
+      
+        <form id="form_login" class="form_login" method="post" onsubmit="return entrar()">
+          <h2>Login</h2><br>  
+          Email:
             <input type="text" class="input-Login" name="email">
             <br>
             Senha:
             <input type="password" class="input-senha" name="senha">
             <br>
             <button id="btn_entrar" class="btn-green">Entrar</button>
-        </form>
-        <img id="img_aguarde" class="gif_box" style="display: none;" src="../public/fotos/carregando.gif">
+            <img id="gif_aguarde" class="gif_aguarde" style="display: none;" src="../fotos/padoru-cadastro.gif">
+          </form>
+        
       </div>
+    </div>
 </body>
 </html>
 <script src="login.js"></script>

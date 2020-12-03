@@ -21,6 +21,7 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0px;
+    scroll-behavior: smooth;
   }
   
 .topnav {
@@ -74,22 +75,22 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-size: xx-large;
   min-height: 95%;
-  padding: 10%;
   text-align: center;
-  display: flex;
+  display:flex;
+  flex-direction: column ;
+  justify-content: center;
 }
 /* Separação/ colocar textos */
- .separacaoInicial{
+ .separacao{
     background-color: white;
     min-height: 100%;
     padding: 3%;
-    display: flex;
+   
   }
 
 
-.paragrafoInicial{
+.paragrafo{
   text-align: center;
   font-size: 165%;
   padding: 2% 5% 2% 5%;
@@ -97,20 +98,22 @@ html, body {
   background-color: rgba(153, 47, 163, 0.644);
  
 }
+
 * {box-sizing: border-box}
 
-.mySlides {display: none}
+.slide_cosplay, .slide_site {display: none}
+
 img {vertical-align: middle;}
 
-/* Slideshow container */
+/* Container dos slides*/
 .slideshow-container {
+
   max-width: 1000px;
   position: relative;
   margin: auto;
-  background-color: #ddd;
 }
 
-/* Next & previous buttons */
+/* Botão de Proximo e anterior das fotos*/
 .anterior, .proximo {
   cursor: pointer;
   position: absolute;
@@ -118,7 +121,7 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -126,25 +129,38 @@ img {vertical-align: middle;}
   user-select: none;
 }
 
-/* Position the "next button" to the right */
-.anterior {
-  left: 0;
-  border-radius: 3px 0 0 3px;
-}
+/* Coloca o botão proximo/anterior nos lados das fotos*/
 .proximo {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.anterior:hover, .proximo:hover {
-  background-color: rgba(0,0,0,0.8);
+.anterior {
+  left: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-/* Caption text */
+/* Botão fica cinza ao passar o mouse encima */
+.anterior:hover, .proximo:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+.slide_site{
+  margin-top: 5%;
+  background-color: rgb(255, 255, 255);
+}
+.slide_cosplay img{
+  width: 75%;
+}
+.slide_site img{
+  width: 75%;
+}
+
+
+
+
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
+  color: #4aaf31;
+  font-size: 30px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -152,49 +168,50 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
-
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .anterior, .proximo,.text {font-size: 11px}
-}
-
-
-
-.Cosplay_tanya{
-  background-color: rgba(255, 255, 255, 0.466);
-  width: 10%;
+.titulo_anime{
+  display: flex;
+  justify-content: center;
   
+  background-color:  rgb(153, 47, 163);
+  font-size: 50px;
 }
-.Cosplay_tanya .cosplay1{
-  width: 200px;
+.galeria_container{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  background-color:rgba(196, 81, 181, 0);
+}
+.galeria {
+  border-radius: 2%;
+  background-color:rgb(196, 81, 180);
+  margin: 5px;
+  border: 1px solid #ccc;
   float: left;
+  width: 25%;
+  flex-direction: row;
+  justify-content: space-around;
 }
-  
 
-.Cosplayer{
-  width: 400px;
-  background-color: rgba(221, 221, 221, 0.24);
+.galeria:hover {
+  border-radius: 2%;
+  border: 3px solid rgb(255, 255, 255);
+
 }
-.Cosplayer2{
-  width: 400px;
-  background-color: rgba(221, 221, 221, 0.24);
-  justify-content: flex-end;
+
+.galeria img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+}
+
+.descricao {
+  display: flex;
+  padding: 15px;
+  text-align: center;
+}
+
+.sobre{
+  background-color: rgb(255, 255, 255);
+  border-radius: 2%;
 }

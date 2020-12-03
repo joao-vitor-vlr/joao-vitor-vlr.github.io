@@ -1,17 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Document</title>
+</head>
+<div class="fundo">
 
-
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="cadastro.html">Cadastro</a>
+      
+    </div>
 
 <body>
     
-    <div class="container">
+    <div class="Cadastro">
 
-        <form class="input-cadastro" id="form_cadastro" method="post" onsubmit="return cadastrar()">
+        <form class="form_cadastro" id="form_cadastro" method="post" onsubmit="return cadastrar()">
         
             <h2 class="input-box-title">Cadastro</h2>
         
             <p class="input-box-text">Informe seu nome</p>
         
-            <input type="text" id="in_nome" name="nome" placeholder="Seu nome" required >
+            <input type="text" id="in_nome" name="nome" placeholder="Seu nome" required minlength="4">
         
             <p class="input-box-text">Informe seu email</p>
         
@@ -19,12 +33,12 @@
         
             <p class="input-box-text">Senha</p>
         
-            <input type="password" id="in_senha" name="senha" placeholder="******" required>
-        
+            <input type="password" id="in_senha" name="senha" placeholder="******" required minlength="5">
+            <br>
             <button class="button" id="btn_cadastro">Cadastrar</button>
-        
+            <img id="img_aguarde" class="gif_box" style="display: none;" src="../fotos/padoru-cadastro.gif">
         </form>
-        <img id="img_aguarde" class="gif_box" style="display: none;" src="../public/fotos/carregando.gif">
+        
     </div>
    
 </body>

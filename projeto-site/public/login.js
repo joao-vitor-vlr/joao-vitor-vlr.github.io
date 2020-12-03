@@ -1,3 +1,4 @@
+
 function entrar() {
     // aguardar();
     var formulario = new URLSearchParams(new FormData(form_login));
@@ -53,7 +54,7 @@ function cadastrar() {
 
         if (response.ok) {
             alert('Cadastro realizado com sucesso!');
-            window.location.href = 'index.html';
+            window.location.href = 'login.html';
         } else {
 
             console.log('Erro de cadastro!');

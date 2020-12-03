@@ -15,7 +15,7 @@
         <a href="index.html">Home</a>
         <a href="login.html">Login</a>
         <a href="cadastro.html">Cadastro</a>
-        <a onclick="sobre()">Sobre</a>
+        <a href="#sobre">Sobre</a>
       </div>
 
 
@@ -25,38 +25,33 @@
     </div>
 
 
-    <div class="separacaoInicial">
-      <div class="paragrafoInicial">
+    <div class="separacao">
+      <div class="paragrafo">
         
         <h1>Tá, mas... O que é cosplay?</h1>
         
         <p>Cosplay é a arte de se transformar em personagens,
            de animes, séries, filmes, historias em quadrinhos e etc.</p>
-          <div class="slideshow-container">
-
-            <div class="mySlides fade">
-         
-              <img src="../fotos/caitlyn.jpg" style="width:75%">
-              <div class="text">Caption Text</div>
-            </div>
-            
-            <div class="mySlides fade">
-         
-              <img src="../fotos/akihabara.jpg" style="width:75%">
-              <div class="text">Caption Two</div>
-            </div>
-            
-            <div class="mySlides fade">
-            
-              <img src="../fotos/BGS_mario.jpg" style="width:75%">
-              <div class="text">Caption Three</div>
-            </div>
-            
-            <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
-            
-            </div>
-            <br>
+           <p>Que tal dar uma Olhada?</p>
+           <div class="slideshow-container">
+             <div class="slide_cosplay">
+               <img src="../fotos/caitlyn.jpg" >
+                <div class="text">caitlyn - LOL</div>
+              </div>
+           
+             <div class="slide_cosplay">
+               <img src="../fotos/akihabara.jpg" >
+               <div class="text">Akihabara - Tokyo</div>
+             </div>
+           
+             <div class="slide_cosplay">
+               <img src="../fotos/BGS_mario.jpg" >
+               <div class="text">Personagens de Mario - BGS</div>
+             </div>
+           
+             <a class="anterior" onclick="plusSlides(-1, 0)">&#10094;</a>
+             <a class="proximo" onclick="plusSlides(1, 0)">&#10095;</a>
+           </div>
             
            
       </div>
@@ -65,44 +60,140 @@
 
       
     
-    <div class="fundoAnime"></div>
+    <div class="fundoAnime">
+     <div class="titulo_anime">Alguns personagens para se inspirarem/ <br>personagens que eu gosto</div>
+     <div class="galeria_container">   
+     <div class="galeria">
+              
+                <img src="../fotos/insp_naruto.jpg">
+              </a>
+              <div class="descricao">Naruto, um grande ninja em Naruto Shippuden.</div>
+            </div>
+
+            <div class="galeria">
+              
+                <img src="../fotos/insp_asta.jpg" >
+              </a>
+              <div class="descricao">Asta uma criança que nasceu sem magia 
+                em um mundo que é movido a magia Black Clover.</div>
+            </div>
+
+            <div class="galeria">
+
+                <img src="../fotos/insp_miku.jpg">
+              </a>
+              <div class="descricao">Hatsune Miku, 
+                Vocaloid Super famosa, 
+                fez vários shows pelo mundo todo.</div>
+            </div>
+
+            <div class="galeria">
+
+                <img src="../fotos/insp_ahri.jpg">
+              </a>
+              <div class="descricao">Ahri, 
+                Raposa de 9 caldas que encanta seus inimigos com charme, 
+                e personagem de League of Legends(LOL)</div>
+              
+            </div>
+            <div class="galeria">
+
+              <img src="../fotos/insp_goku.jpg">
+            </a>
+            <div class="descricao">Goku, 
+              já salvou a terra milhares de vezes em Dragon ball e 
+              é o Super Sayajin mais poderoso de todos.</div>
+</div>
+<div class="galeria">
+
+  <img src="../fotos/insp_nekopara.jpg">
+</a>
+<div class="descricao">Chocola/Vanilla é o nome dessas duas, são empregadas só que metade gato, fazem parte de uma série de jogos Nekopara</div>  
+    </div>
       
-    <div class="separacao"></div>
-
-
-    <div class="parallax"></div>
-
-
-  
-
-
-   
-</body>
+      <div class="separacao">
+        <div class="paragrafo">
+        <h1>Caso queiram comprar algum cosplay, aqui vão alguns sites</h1>
+          
+                <div class="slideshow-container">
+                  <div class="slide_site">
+                    <img src="../fotos/nipon_cosplay.png">
+                   
+                  </div>
+              
+                  <div class="slide_site">
+                    <img src="../fotos/purin_lens.png" >
+                   
+                  </div>
+              
+                  <div class="slide_site">
+                    <img src="../fotos/nyan_nyan.png" >
+                   
+                </div>
+              
+                <a class="anterior" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="proximo" onclick="plusSlides(1, 1)">&#10095;</a>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div class="separacao" >
+      <div class="paragrafo"><h1>Sobre Por que eu faço cosplay?</h1>
+        <p><h2>Olá, Meu nome é João Vitor</h2>
+          <img src="../fotos/eu_panteraNegra.jpg" width="500px">
+          <div id="sobre" class="sobre">Desde pequeno eu sempre amei cosplays, 
+            sempre imaginei como era ver meu personagem favorito na mina frente e poder abraçar ele.
+          Bom hoje em dia to tão dentro desse mundo que quando eu gosto de um personagem eu viro ele, e as pessoas ficam encantadas em me ver,
+        e é isso que move a minha vontade de continuar.</div>
+      </p></div>
+      
+    </div>
+</body> 
 </html>
 <script>
-  var slideIndex = 1;
-showSlides(slideIndex);
+  var slideIndex = [1,1];
+/* Class the members of each slideshow group with different CSS classes */
+var slideId = ["slide_cosplay", "slide_site"]
+showSlides(1, 0);
+showSlides(1, 1);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(A, B) {
+  showSlides(slideIndex[B] += A, B);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+function showSlides(A, B) {
+  var contador;
+  var id = document.getElementsByClassName(slideId[B]);
+  if (A > id.length) {slideIndex[B] = 1}
+  if (A < 1) {slideIndex[B] = id.length}
+  for (contador = 0; contador < id.length; contador++) {
+    id[contador].style.display = "none";
   }
- 
-  slides[slideIndex-1].style.display = "block";  
-
+  id[slideIndex[B]-1].style.display = "block";
 }
 
-  
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
 </script>

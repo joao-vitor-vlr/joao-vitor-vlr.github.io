@@ -27,7 +27,13 @@ module.exports = (sequelize, DataTypes) => {
 			field: 'senha',
 			type: DataTypes.STRING,
 			allowNull: false
+		},
+		cpf:{
+			field: 'cpf',
+			type: DataTypes.CHAR,
+			allowNull: false
 		}
+
 	}, 
 	{
 		tableName: 'usuario', 

@@ -1,9 +1,9 @@
 module.exports = {
   production: {
-    username: 'Joao.vitorvalera',
-    password: 'Pytuko43672440',
-    database: 'BDCosplay',
-    host: 'bdcosplay.database.windows.net',
+    username: 'onesolutions',
+    password: '#Gfgrupo5',
+    database: 'DBGrupo5',
+    host: 'dbgrupo5.database.windows.net',
     dialect: 'mssql',
     xuse_env_variable: 'DATABASE_URL',
     dialectOptions: {
